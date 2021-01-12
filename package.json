@@ -1,8 +1,12 @@
 {
   "name": "q-solutions",
   "version": "1.0.0",
-  "description": "",
+  "description": "Q-Solutions",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tuvoljus/q-solutions.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",

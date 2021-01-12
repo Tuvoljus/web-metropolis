@@ -1,5 +1,7 @@
-import Menue from './Menue.js'
-import Footer from './Footer'
+import React, { lazy } from 'react'
+const Menue = lazy(() => import('./Menue.js')) 
+const Footer = lazy(() => import('./Footer')) 
+
 
 const layout = ( {children} ) => {
     return (

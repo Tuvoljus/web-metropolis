@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Link from 'next/Link'
 import Image from 'next/image'
 
 const Menue = () => {
@@ -21,7 +20,7 @@ const Menue = () => {
                 <a href="/" classNameName="navbar-brand" href="#">
                     <Image src="/img_webp/QSolutions_weiß_rot_2.webp" alt="QSolutions" width={250} height={48} layout="intrinsic"/>
                 </a>
-                <button  className="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"  onClick={showBlog}>
+                <button  className="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-label="Hamburger Menue"  onClick={showBlog}>
                 <span className="navbar-toggler-icon">
                     
                 </span>

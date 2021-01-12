@@ -2,6 +2,7 @@ import "../scss/main.scss";
 import Layout from '../components/Layout'
 import { useEffect } from "react"
 
+
 function MyApp({ Component, pageProps }) {
     useEffect(() => {
         if("serviceWorker" in navigator) {
