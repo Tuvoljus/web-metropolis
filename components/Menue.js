@@ -1,56 +1,77 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 
+
 const Menue = () => {
-    const [openedCollapse, setOpenedCollapse] = React.useState('');
-
+const [scrolling, setScrolling] = useState(null);
+  const [scrollTop, setScrollTop] = useState(80);
+    const [brandColor, setBrandColor] = useState(null);
     
-    const showBlog = () => {
-        if (openedCollapse != 'show') {
-            setOpenedCollapse('show') 
-        } else {
-            setOpenedCollapse('') 
-        }   
-    };
+    const color = brandColor;
 
+ const divStyle = {
+         color: color,
+         
+  };    
+
+    useEffect(() => {
+    function onScroll() {
+      let currentPosition = window.pageYOffset; // or use document.documentElement.scrollTop;
+      if (currentPosition > 80) {
+        // downscroll code
+          setScrolling('c-bg');
+          setBrandColor('#ff3333');
+      } else {
+        // upscroll code
+          setScrolling('');
+          setBrandColor('');
+      }     
+        };
+
+     const ChangeBrandColor = () => {
+         divStyle = {
+         color: {brandColor},
+         
+  }; 
+    }
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollTop]);
+     
+   
+    
     return (
         <>
-        <nav className="navbar  bg-dark navbar-dark">
+          <nav className={`navbar navbar-expand-lg navbar-dark fixed-top  ${scrolling}`} >
             <div className="container">
-                <a href="/" classNameName="navbar-brand" href="#">
-                    <Image src="/img_webp/QSolutions_weiß_rot_2.webp" alt="QSolutions" width={250} height={48} layout="intrinsic"/>
-                </a>
-                <button  className="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-label="Hamburger Menue"  onClick={showBlog}>
-                <span className="navbar-toggler-icon">
-                    
-                </span>
-                </button>
-                </div>
-        </nav>
-        <div className="nav" style={{float: 'right'}}>
-            <div className="container">
-                <div className={`collapse navbar-collapse pull-right ${openedCollapse}`}   id="collapsibleNavbar"  style={{position: 'relative'}}>
-                    <ul className="navbar-nav" style={{position: 'absolute', marginTop: '0px', color: 'black', zIndex: '1200', width: '150px', backgroundColor: 'black'}}>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Startseite</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Startseite</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Startseite</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Startseite</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Startseite</a>
-                        </li>
+              <a className="navbar-brand" href="#page-top" style={divStyle}>
+                Web.Metropolis
+              </a>
+              <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+              </button>    
+                <div className={`collapse navbar-collapse justify-content-end`} id="navbarResponsive" >
+                  <ul className="navbar-nav">                      
+                      <li className="nav-item">
+                        <a className="nav-link " href="#about" style={divStyle}>
+                          About us
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link " href="#mietpark" style={divStyle}>
+                          Projekte
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#contact" style={divStyle}>
+                          Kontakt
+                        </a>
+                      </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-               
+                  </div>      
+              </div>
+          </nav>
         </>
     )
 }

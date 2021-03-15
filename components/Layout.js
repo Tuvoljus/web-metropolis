@@ -1,14 +1,17 @@
 import React, { lazy } from 'react'
-const Menue = lazy(() => import('./Menue.js')) 
-const Footer = lazy(() => import('./Footer')) 
+import dynamic from 'next/dynamic'
+const Menue = dynamic(() => import('./Menue.js'))
+const Footer = dynamic(() => import('./Footer'))
+
+ 
 
 
 const layout = ( {children} ) => {
     return (
         <>
-        <Menue />
-        {children}
-        <Footer />
+            <Menue />            
+            {children}
+            <Footer />
         </>
     )
 } 
