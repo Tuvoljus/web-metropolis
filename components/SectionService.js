@@ -9,7 +9,7 @@ export const config = { amp: 'hybrid' }
 const SectionService = () => {
     return (
         <>
-          <section id="services" className="services background-gray--even-lightest">       
+          <section id="services" className={`services ${styles.backgroundGray}`}>       
             <div className="container text-center">
               <header>
                 <h1 className="small-heading">
