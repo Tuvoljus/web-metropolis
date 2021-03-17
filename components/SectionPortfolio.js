@@ -6,6 +6,7 @@ import styles from '../scss/Portfolio.module.scss'
 export const config = { amp: 'hybrid' };
 
 const SectionPortfolio = () => {
+    const isAmp = useAmp();
     return (
         <>
             {/* <!-- Portfolio Section--> */}
@@ -14,9 +15,11 @@ const SectionPortfolio = () => {
                 <div className="row">
                         <div className={`${styles.item} col-lg-3 col-md-6`}>
                             <a href="#" data-toggle="modal" data-target="#portfolio-item1">
-                            <Image layout='responsive' src="/img/q-solutions.jpg" width="700" height="700" alt="Alexander Keil" />
-
-                            
+                            {isAmp ? (
+                                <amp-img layout="responsive" width="700" height="700" src="/img_webp/q-solutions.webp" alt="Q-Solutions" />
+                            ):(
+                                <Image layout='responsive' src="/img/q-solutions.jpg" width={700} height={700} alt="Alexander Keil" />
+                            )}                                      
                     <div className={[styles.overlay]}>
                         <div className="content">
                         <h2>Q-Solutions GmbH</h2>
@@ -29,9 +32,11 @@ const SectionPortfolio = () => {
                 
                         <div className={`${styles.item} col-lg-3 col-md-6`}>
                             <a href="#" data-toggle="modal" data-target="#portfolio-item2">
-                                <Image layout='responsive' src="/img/Falamex.jpg" width="700" height="700" alt="Falamex" />
-
-                                
+                                {isAmp ? 
+                                (<amp-img layout="responsive" width="700" height="700" src="/img_webp/Falamex.webp" alt="Falamex"/>
+                                ) : (
+                                <Image layout='responsive' src="/img/Falamex.jpg" width={700} height={700} alt="Falamex" />
+                                )}                               
                                 <div className={[styles.overlay]}>
                                     <div className="content">
                                         <h2>
@@ -48,9 +53,12 @@ const SectionPortfolio = () => {
                 
                         <div className={`${styles.item} col-lg-3 col-md-6`}>
                             <a href="#" data-toggle="modal" data-target="#portfolio-item1">
-                                <Image layout='responsive' src="/img/donut-baellchen.jpg" width="700" height="700" alt="Donut Bällchen" />
+                                {isAmp ? (
+                                    <amp-img layout='responsive' src="/img_webp/donut-baellchen.webp" width="700" height="700" alt="Donut Bällchen"/>
+                                ):(
+                                    <Image layout='responsive' src="/img/donut-baellchen.jpg" width={700} height={700} height="700" alt="Donut Bällchen" />
+                                )}                              
 
-                                
                                 <div className={[styles.overlay]}>
                                     <div className="content">
                                         <h2>
@@ -66,7 +74,12 @@ const SectionPortfolio = () => {
                 {/* <!-- End Item--> */}                
                         <div className={`${styles.item} col-lg-3 col-md-6`}>
                             <a href="#" data-toggle="modal" data-target="#portfolio-item2">
-                                <Image layout='responsive' src="/img/keil-baumaschinen.jpg" width="700" height="700" alt="Keil Baumaschinen" />
+                                {isAmp ? (
+                                    <amp-img layout='responsive' src="/img_webp/keil-baumaschinen.webp" width="700" height="700" alt="Keil Baumaschinen" />
+                                ) :(
+                                <Image layout='responsive' src="/img/keil-baumaschinen.jpg" width={700} height={700} alt="Keil Baumaschinen" />
+                                )}
+                                
                               
                                 <div className={[styles.overlay]}>
                                     <div className="content">
