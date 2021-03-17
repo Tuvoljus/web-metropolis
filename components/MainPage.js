@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import NextScript from 'next/document'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import { useAmp } from 'next/amp'
-import SectionAbout from './SectionAbout'
-import SectionService from './SectionService'
-import SectionPortfolio from './SectionPortfolio'
+const SectionAbout = dynamic(() => import('./SectionAbout'))
+const SectionService = dynamic(() => import('./SectionService'))
+const SectionPortfolio = dynamic(() => import('./SectionPortfolio'))
+
 
 export const config = { amp: 'hybrid' }
 
