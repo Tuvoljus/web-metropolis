@@ -9,7 +9,7 @@ import SectionPortfolio from './SectionPortfolio'
 export const config = { amp: 'hybrid' }
 
 const MainPage = () => {
-    const isAmp = useAmp()
+    const isAmp = useAmp();
     return (
         <>
         <header>

@@ -32,7 +32,9 @@ const SectionService = () => {
                     Web Design
                   </h3>
                   <p>
-                    Wir entwickeln für Sie das passende Design für Ihr Unternehmen.
+                    Ganz oder garnicht. 
+                    Stets immer das passende Design für Ihr Produkt,
+                    Dienstleistung, oder Unternehmensprofil.
                   </p>
                 </div>
                 {/* Item*/}
@@ -43,10 +45,11 @@ const SectionService = () => {
                       </use>
                     </svg>
                   </div>
-                  <h3 className="h5">Web Development</h3>
+                  <h3 className="h5">Web Development / SEO</h3>
                   <p>
-                    Ihre Seite soll mehr können?
-                    Wir binden Datenbanken und viele andere Funktionen zu 
+                  Ihre Seite soll mehr können als nur gut aussehen
+                   und nicht nur interactive sein?
+                  Wir binden Datenbanken ein und erweitern Ihre Seite mit tollen Funktionen!                                     
                   </p>
                 </div>
                 {/* Item*/}
@@ -59,7 +62,8 @@ const SectionService = () => {
                   </div>
                   <h3 className="h5">Mobile Design</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                  Der Anteil der User, die Internetseiten über das Smartphone besuchen, steigt stetig,
+                  deshalb sollte auch Ihre Seite optimal auf allen Wiedergabegeräten angezeigt werden. 
                   </p>
                 </div>
                 {/* Item*/}
@@ -82,7 +86,11 @@ const SectionService = () => {
                     </svg>
                   </div>
                   <h3 className="h5">webbasierte 3D Konfiguratoren</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  <p>
+                    Mithilfe von webGL können wir Ihre Produkte als 3D Objekt konfigurierbar machen 
+                    oder virtuelle Rundgänge erstellen.
+                    Der Nutzen liegt in der besseren Vorstellung der Seitenbesucher Ihrer Produkte indem vertiefte Sicht und Erklärung Ihrer Produkte und Angebot bieten.          
+                  </p>
                 </div>
                 {/* Item*/}
                 <div className={`col-lg-4 col-md-6 ${styles.item}`}>

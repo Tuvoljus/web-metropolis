@@ -13,9 +13,13 @@ const SectionAbout = () => {
                 <div className="container text-center">
                     <header>
                     <h1 className="small-heading">About Us</h1>
-                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <h2>Vielseitig.</h2>
                     </header>
-                    <p className="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim iste natus error sit voluptatem accusantium doloremque.</p>
+                    <p className="lead">
+                        Wir sind eine frische Agentur, gegründet im Januar 2021,
+                        mit Professionals aus dem Bereich Webentwicklung, Design, 3D und Video Produktion
+                        und können das Wissen aus 15 Jahren nach Bedarf bündeln.
+                    </p>
                 </div>
             </section>
         </>
