@@ -40,8 +40,8 @@ const Footer = () => {
                         Buchloer Str. 3., München, DE
                     </p>
                     <p>
-                        <a href="mailto:designer@company.com">
-                            kontakt@webmetropolis.xyz
+                        <a style={{textDecoration: 'none'}} href="mailto:kontakt@webmetropolis.de">
+                            kontakt@webmetropolis.de
                         </a>
                     </p>
                 </div>                

@@ -32,7 +32,7 @@ const SectionService = () => {
                     Web Design
                   </h3>
                   <p>
-                    Ganz oder garnicht. 
+                    Ganz oder gar nicht. 
                     Stets immer das passende Design für Ihr Produkt,
                     Dienstleistung, oder Unternehmensprofil.
                   </p>
