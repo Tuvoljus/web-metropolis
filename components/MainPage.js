@@ -15,7 +15,7 @@ const MainPage = () => {
     return (
         <>
         <header>
-            <section className="hero">
+            <section className="hero" id="hero">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="text col-lg-6 col-md-12">

@@ -3,6 +3,18 @@ import Image from 'next/image'
 
 
 const Menue = () => {
+const [openedCollapse, setOpenedCollapse] = useState('');
+
+    
+    const showBlog = () => {
+        if (openedCollapse != 'show') {
+            setOpenedCollapse('show') 
+        } else {
+            setOpenedCollapse('') 
+        }   
+    };
+
+
 const [scrolling, setScrolling] = useState(null);
   const [scrollTop, setScrollTop] = useState(80);
     const [brandColor, setBrandColor] = useState(null);
@@ -49,9 +61,9 @@ const [scrolling, setScrolling] = useState(null);
                 Web.Metropolis
               </a>
               <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon" onClick={showBlog}></span>
               </button>    
-                <div className={`collapse navbar-collapse justify-content-end`} id="navbarResponsive" >
+                <div className={`collapse navbar-collapse justify-content-end ${openedCollapse}`} id="navbarResponsive" >
                   <ul className="navbar-nav">                      
                       <li className="nav-item">
                         <a className="nav-link " href="#about" style={divStyle}>
@@ -59,7 +71,7 @@ const [scrolling, setScrolling] = useState(null);
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link " href="#mietpark" style={divStyle}>
+                        <a className="nav-link " href="#portfolio" style={divStyle}>
                           Projekte
                         </a>
                       </li>

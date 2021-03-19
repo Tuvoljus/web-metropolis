@@ -1,3 +1,8 @@
+section,
+footer {
+ overflow-x:hidden
+}
+
 .c-bg{
  border-bottom: 5px solid rgb(48, 134, 215);
   background-color: rgb(255, 255, 255);  
@@ -26,7 +31,7 @@ section.hero {
 section.hero::before {
   content: 'Web Metropolis';
   display: inline-block;
-  font-size: 20rem;
+  font-size: 20em;
   position: absolute;
   font-weight: 800;
   opacity: 0.04;
