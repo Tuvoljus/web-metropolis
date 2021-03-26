@@ -3,7 +3,7 @@ import styles from '../scss/Footer.module.scss';
 const Footer = () => {
     return (
         <>
-        <footer className={[styles.mainFooter]}>
+        <footer id="contact" className={[styles.mainFooter]}>
             <div className="container text-center">
                 <div className="brief">
                     <div className="logo mb-3">
