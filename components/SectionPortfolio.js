@@ -14,10 +14,10 @@ const SectionPortfolio = () => {
             <div className="container-fluid text-center">
                 <header>
                     <h1 className="small-heading">
-                    Portfolio
+                        Portfolio
                     </h1>
                     <h2>
-                    Unsere Kundenprojekte
+                        Unsere Kundenprojekte
                     </h2>
                 </header>
                 <div className="row">
