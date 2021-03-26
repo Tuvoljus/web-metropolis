@@ -10,34 +10,35 @@ const Footer = () => {
                         Image
                     </div>
                         <p>
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            Am Ende ein tolles Produkt zu haben, ist keine Kunst!
                         </p>
                 </div>
                 <ul className={[styles.siteLinks]}>
                     <li className="list-inline-item">
-                        <a href="#">
+                        <a href="#services">
                             What we do
                         </a>
                     </li>
                     <li className="list-inline-item">
-                        <a href="#">
+                        <a href="#portfolio">
                             Our Work
                         </a>
                     </li>
                     <li className="list-inline-item">
-                        <a href="#">
+                        <a href="#about">
                             Company
                         </a>
                     </li>
-                    <li className="list-inline-item">
+                    {/* <li className="list-inline-item">
                         <a href="#">
                             Contact
                         </a>
-                    </li>
+                    </li> */}
                 </ul>                
                 <div className="contact-info">
                     <p>
-                        Buchloer Str. 3., München, DE
+                        Buchloer Str. 3., München, DE<br/>
+                        +49 89 20 32 78 16
                     </p>
                     <p>
                         <a style={{textDecoration: 'none'}} href="mailto:kontakt@webmetropolis.de">

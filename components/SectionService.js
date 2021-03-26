@@ -75,7 +75,9 @@ const SectionService = () => {
                     </svg>
                   </div>
                   <h3 className="h5">3D</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  <p>
+                    Mittels Computertechnik Objekte und Szenen anhand von Plänen, Skizzen oder Fotos digital nachbilden, einfärben, bewegen und beleuchten, mit einer virtuellen Kamera abfilmen und es als Filmbild oder interaktive Anwendung ausgeben.
+                </p>
                 </div>
                 {/* Item*/}
                 <div className={`col-lg-4 col-md-6 ${styles.item}`}>
@@ -102,7 +104,8 @@ const SectionService = () => {
                   </div>
                   <h3 className="h5">Videos</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                    Video, als die modernste Form der Kommunikation, die gewählt werden kann um Ihre Zielgruppe an sich zu binden.
+                    Verwenden Sie Videos als Werbefilm zum Beispiel auf den Plattformen YouTube oder Instagram und erreichen ein Millionenpublikum! 
                   </p>
                 </div> 
               </div>
