@@ -41,7 +41,7 @@ const Footer = () => {
                         +49 89 20 32 78 16
                     </p>
                     <p>
-                        <a style={{textDecoration: 'none'}} href="mailto:kontakt@webmetropolis.de">
+                        <a style={{textDecoration: 'none', color: 'rgba(255,255,255,.75)'}} href="mailto:kontakt@webmetropolis.de">
                             kontakt@webmetropolis.de
                         </a>
                     </p>
