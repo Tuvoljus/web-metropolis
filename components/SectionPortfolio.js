@@ -10,8 +10,16 @@ const SectionPortfolio = () => {
     return (
         <>
             {/* <!-- Portfolio Section--> */}
-            <section id="portfolio" className="portfolio">
-            <div className="container-fluid">
+            <section id="portfolio" className="portfolio">            
+            <div className="container-fluid text-center">
+                <header>
+                    <h1 className="small-heading">
+                    Portfolio
+                    </h1>
+                    <h2>
+                    Unsere Kundenprojekte
+                    </h2>
+                </header>
                 <div className="row">
                         <div className={`${styles.item} col-lg-3 col-md-6`}>
                             <a href="#" data-toggle="modal" data-target="#portfolio-item1">
