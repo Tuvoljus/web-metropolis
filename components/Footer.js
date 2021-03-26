@@ -42,7 +42,7 @@ const Footer = () => {
                     </p>
                     <p>
                         <a style={{textDecoration: 'none', color: 'rgba(255,255,255,.75)'}} href="mailto:kontakt@webmetropolis.de">
-                            kontakt@webmetropolis.de
+                            kontakt@web-metropolis.de
                         </a>
                     </p>
                 </div>                
