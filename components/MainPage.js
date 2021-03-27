@@ -30,7 +30,7 @@ const MainPage = () => {
                                 {isAmp ? (
                                     <amp-img layout="responsive" width="1000" height="1333" quality="10" src="/img_webp/HeaderFoto_Alexander.webp" alt="Alexander Keil" />
                                 ) : (
-                                    <Image layout='responsive' width={1000} height={1333} quality="50" src="/img/HeaderFoto_Alexander.png" alt="Alexander Keil"/> 
+                                    <Image layout='responsive' width={1000} height={1333} quality="10" src="/img/HeaderFoto_Alexander.png" alt="Alexander Keil"/> 
                                 )}                              
                             </div>
                     </div>

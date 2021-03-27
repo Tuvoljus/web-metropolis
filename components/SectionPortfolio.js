@@ -31,7 +31,9 @@ const SectionPortfolio = () => {
                     <div className={[styles.overlay]}>
                         <div className="content">
                         <h2>Q-Solutions GmbH</h2>
-                        <p>Web Projekt</p>
+                        <p style={{color: 'black'}}>
+                            Web Projekt
+                        </p>
                         </div>
                     </div>
                     </a>
@@ -50,7 +52,7 @@ const SectionPortfolio = () => {
                                         <h2>
                                             Falamex
                                         </h2>
-                                        <p>
+                                        <p style={{color: 'black'}}>
                                             Web Projekt
                                         </p>
                                      </div>
@@ -72,7 +74,7 @@ const SectionPortfolio = () => {
                                         <h2>
                                             Donut Bällchen
                                             </h2>
-                                        <p>
+                                        <p style={{color: 'black'}}>
                                             Web Projekt
                                         </p>
                                     </div>
@@ -94,7 +96,7 @@ const SectionPortfolio = () => {
                                         <h2>
                                             Keil Baumaschinen
                                         </h2>
-                                        <p>
+                                        <p style={{color: 'black'}}>
                                             Web Projekt
                                         </p>
                                     </div>
@@ -105,7 +107,7 @@ const SectionPortfolio = () => {
                 </div>
             </div>
             {/* <!-- Demo Portfolio Modal - Duplicate for more items, replace id with a new one--> */}
-            <div id="portfolio-item1" tabIndex="-1" role="dialog" aria-hidden="true" className="modal fade">
+            <div id="portfolio-item1" tabIndex="-1" role="dialog" aria-hidden="true" className="modal fade" style={{paddingRight: '17px'}}>
                 <div role="document" className="modal-dialog">
                     <div className="modal-content">
                             <button type="button" data-dismiss="modal" aria-label="Close" className="close">

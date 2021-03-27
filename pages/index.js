@@ -8,7 +8,7 @@ const IndexPage = () => {
         <>
         <Head>
           <title>Q-Solutions</title>
-          <script src="/scrollreveal/scrollreveal.min.js"></script>
+          
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <MainPage />

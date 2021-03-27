@@ -10,7 +10,7 @@ const Footer = () => {
                         Image
                     </div>
                         <p>
-                            Am Ende ein tolles Produkt zu haben, ist keine Kunst!
+                            Am Ende ein tolles Produkt zu haben ist keine Kunst!
                         </p>
                 </div>
                 <ul className={[styles.siteLinks]}>
@@ -41,7 +41,7 @@ const Footer = () => {
                         +49 89 20 32 78 16
                     </p>
                     <p>
-                        <a style={{textDecoration: 'none', color: 'rgba(255,255,255,.75)'}} href="mailto:kontakt@webmetropolis.de">
+                        <a style={{textDecoration: 'none', color: 'rgba(255,255,255,.75)'}} href="mailto:kontakt@web-metropolis.de">
                             kontakt@web-metropolis.de
                         </a>
                     </p>
