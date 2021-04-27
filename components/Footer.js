@@ -10,7 +10,7 @@ const Footer = () => {
                         Image
                     </div>
                         <p>
-                            Am Ende ein tolles Produkt zu haben ist keine Kunst!
+                            Am Ende ein tolles Produkt zu haben, ist keine Kunst!
                         </p>
                 </div>
                 <ul className={[styles.siteLinks]}>
@@ -51,7 +51,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <p className="mb-0">© All rights reserved.</p>
+                            <p className="mb-0">Copyright &copy; {new Date().getFullYear()}</p>
                         </div>
                         <div className="col-md-6 text-right">
                            

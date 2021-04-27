@@ -8,6 +8,7 @@ const SectionService = dynamic(() => import('./SectionService'))
 const SectionPortfolio = dynamic(() => import('./SectionPortfolio'))
 
 
+
 export const config = { amp: 'hybrid' }
 
 const MainPage = () => {
@@ -41,6 +42,7 @@ const MainPage = () => {
             <SectionAbout />
             <SectionService />
             <SectionPortfolio />
+         
                 
         </main>
             {/* <NextScript /> */}

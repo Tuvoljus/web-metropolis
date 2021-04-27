@@ -33,3 +33,41 @@
 }
 
 //Modal
+.modalContent {
+    padding: 100px 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.modalDialog {
+    max-width: 1200px;
+    margin: 1.75rem auto;
+    position: relative;
+    width: auto;
+    pointer-events: none;
+    }
+
+.closeButton {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    //background: rgba(255, 255, 255, .3);
+    color: black;
+    // text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 1;
+    outline: none;
+}
+
+.modal {
+    background-color: rgba(0,0,0,0.8);
+    overflow-x: hidden;
+    overflow-y: auto;
+}

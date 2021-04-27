@@ -2,14 +2,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useAmp } from 'next/amp'
 
+
 export const config = { amp: 'hybrid' }
 
-const SectionAbout = () => {
+const SectionAbout = () => {    
     return (
         <>
             
                
-            <section id="about" className="about">
+            <section id="about" className="about">               
                 <div className="container text-center">
                     <header>
                     <h1 className="small-heading">About Us</h1>
