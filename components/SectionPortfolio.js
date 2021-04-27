@@ -163,10 +163,7 @@ const SectionPortfolio = () => {
                 <p>
                     Unser Kunde Peter Moser hat eine von 2 Seiten in Auftrag gegeben: falamex.de und donut-baellchen.de
                     Falamex ist Gourmet-Mittagessen, dass der bekannten Speise Falafel eine mexikanische Geschmacksnote verleiht. 
-                </p>
-                <p>
-                    Um die Seite mit Funktionalitäten zu erweitern, haben wir mit JavaScript die Button-Funktion im News-Bereich des jeweiligen Produkts konfortabel für den Benutzer die Informationen zum Produkt bereitgestellt.
-                </p>
+                </p>                
                 <a href="http://falamex.de"  target="_blank" className="btn btn-primary">Visit website</a>
             </Falamex>         
             {/* <!-- End Modal Falamex--> */}
