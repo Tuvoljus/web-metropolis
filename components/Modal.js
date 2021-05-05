@@ -1,18 +1,17 @@
 import React, { useEffect, useRef, useState } from "react"
 import ReactDOM from "react-dom"
 import Image from 'next/image'
-import styled from "styled-components"
+
 import styles from '../scss/Portfolio.module.scss'
 
-const Modal = ({ show, onClose, children, title, picture, alt }) => {
+const Modal = ({ show, onClose, children, title, picture, alt, fade }) => {
   const [isBrowser, setIsBrowser] = useState(false);
-  const [fade, setFade] = useState('');
 
   useEffect(() => {
     setIsBrowser(true);
   }, []);
 
-
+  fade = fade;
 
   const handleCloseClick = (e) => {
     e.preventDefault();
@@ -20,8 +19,8 @@ const Modal = ({ show, onClose, children, title, picture, alt }) => {
   };
 
   const modalContent = show ? (
-     <div tabindex="-1" role="dialog" aria-hidden="true" className={`modal ${styles.modal} show fade`} style={{display: 'block', paddingRight: '17px'}}>
-        <div role="document" className={`modal-dialog modal-dialog-scrollable  ${styles.modalDialog}`}>
+     <div tabindex="-1" role="dialog" aria-hidden="true" className={`modal ${styles.modal} show`} style={{display: 'block', paddingRight: '17px'}}>
+        <div role="document" className={`modal-dialog ${styles.modalDialog}`}>
           <div className={`modal-content ${styles.modalContent}`}>
             <button type="button" data-dismiss="modal" aria-label="Close" onClick={handleCloseClick} className={`${styles.closeButton} btn-close`} >
               <span  aria-hidden="true">
@@ -60,33 +59,5 @@ const Modal = ({ show, onClose, children, title, picture, alt }) => {
   }
 };
 
-const StyledModalBody = styled.div`
-  padding-top: 10px;
-`;
-
-const StyledModalHeader = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  font-size: 25px;
-`;
-
-const StyledModal = styled.div`
-  background: white;
-  width: 500px;
-  height: 600px;
-  border-radius: 15px;
-  padding: 15px;
-`;
-const StyledModalOverlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-`;
 
 export default Modal;

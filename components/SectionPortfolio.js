@@ -9,13 +9,24 @@ import Falamex from './Modal'
 import DonutBaellchen from './Modal'
 import KeilBaumaschinen from './Modal'
 
+
 export const config = { amp: 'hybrid' };
 
 const SectionPortfolio = () => {    
     const [showModalQS, setShowModalQS] = useState(false);
     const [showModalFalamex, setShowModalFalamex] = useState(false);
     const [showModalDB, setShowModalDB] = useState(false);
-    const [showModalKB, setShowModalKB] = useState(false);  
+    const [showModalKB, setShowModalKB] = useState(false);
+
+    const [fade, setFade] = useState('');
+
+    const showFade = () => {
+        if(fade != 'fade') {
+            setFade('fade')
+        } else {
+            setFade('');
+        }
+    }
 
     const pictureQS = '/img/q-solutions.jpg';
     const altQS = "Q-Solutions";
@@ -44,7 +55,7 @@ const SectionPortfolio = () => {
                 <div className="row">
                         <div className={`${styles.item} col-lg-3 col-md-6`}>
                                  
-                                <a onClick={() => setShowModalQS(true)}>
+                                <a onClick={() => setShowModalQS(true)} >
                                     {isAmp ? (
                                         <amp-img layout="responsive" width="700" height="700" src="/img_webp/q-solutions.webp" alt="Q-Solutions" />
                                     ):(
@@ -66,7 +77,7 @@ const SectionPortfolio = () => {
                 {/* <!-- End Item--> */}
                 
                         <div className={`${styles.item} col-lg-3 col-md-6`}>
-                            <a onClick={() => setShowModalFalamex(true)}>
+                            <a onClick={() => setShowModalFalamex(true).modal('fade')}>
                                 {isAmp ? 
                                 (<amp-img layout="responsive" width="700" height="700" src="/img_webp/Falamex.webp" alt="Falamex"/>
                                 ) : (
@@ -207,6 +218,7 @@ const SectionPortfolio = () => {
                 <a href="https://keil-baumaschinen.de"  target="_blank" className="btn btn-primary">Visit website</a>
             </KeilBaumaschinen>         
             {/* <!-- End Modal Keil Baumaschinen--> */}
+            
             </section>
             {/* <!-- End Portfolio Section--> */}
         </>

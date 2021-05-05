@@ -1,4 +1,5 @@
 import '../scss/main.scss'
+
 import Layout from '../components/Layout'
 import { useEffect } from "react"
 
