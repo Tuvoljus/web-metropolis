@@ -21,7 +21,7 @@ const Modal = ({ show, onClose, children, title, picture, alt, fade }) => {
   const modalContent = show ? (
      <div tabindex="-1" role="dialog" aria-hidden="true" className={`modal ${styles.modal} show`} style={{display: 'block', paddingRight: '17px'}}>
         <div role="document" className={`modal-dialog ${styles.modalDialog}`}>
-          <div className={`modal-content modal-dialog-scrollable ${styles.modalContent}`}>
+          <div className={`modal-content ${styles.modalContent}`}>
             <button type="button" data-dismiss="modal" aria-label="Close" onClick={handleCloseClick} className={`${styles.closeButton} btn-close`} >
               <span  aria-hidden="true">
                 <i  className="icon-close">
