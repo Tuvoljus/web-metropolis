@@ -17,16 +17,20 @@ const SectionPortfolio = () => {
     const [showModalFalamex, setShowModalFalamex] = useState(false);
     const [showModalDB, setShowModalDB] = useState(false);
     const [showModalKB, setShowModalKB] = useState(false);
+    const [isFade, setIsFade] = useState('');
+    const [isShow, setIsShow] = useState('');
 
-    const [fade, setFade] = useState('');
+   
 
-    const showFade = () => {
-        if(fade != 'fade') {
-            setFade('fade')
-        } else {
-            setFade('');
-        }
-    }
+ const showModal = () => {
+    setShowModalQS(true);
+    setIsFade('fade');
+    setIsShow('show');  
+}
+
+
+
+   
 
     const pictureQS = '/img/q-solutions.jpg';
     const altQS = "Q-Solutions";
@@ -55,7 +59,7 @@ const SectionPortfolio = () => {
                 <div className="row">
                         <div className={`${styles.item} col-lg-3 col-md-6`}>
                                  
-                                <a onClick={() => setShowModalQS(true)} >
+                                <a onClick={ () => showModal()}>
                                     {isAmp ? (
                                         <amp-img layout="responsive" width="700" height="700" src="/img_webp/q-solutions.webp" alt="Q-Solutions" />
                                     ):(
@@ -77,7 +81,7 @@ const SectionPortfolio = () => {
                 {/* <!-- End Item--> */}
                 
                         <div className={`${styles.item} col-lg-3 col-md-6`}>
-                            <a onClick={() => setShowModalFalamex(true).modal('fade')}>
+                            <a onClick={() => setShowModalFalamex(true)}>
                                 {isAmp ? 
                                 (<amp-img layout="responsive" width="700" height="700" src="/img_webp/Falamex.webp" alt="Falamex"/>
                                 ) : (
@@ -122,7 +126,7 @@ const SectionPortfolio = () => {
                             <a onClick={() => setShowModalKB(true)}>
                                 {isAmp ? (
                                     <amp-img layout='responsive' src="/img_webp/keil-baumaschinen.webp" width="700" height="700" alt="Keil Baumaschinen" />
-                                ) :(
+                                ):(
                                 <Image layout='responsive' src="/img/keil-baumaschinen.jpg" width={700} height={700} alt="Keil Baumaschinen" />
                                 )}                               
                                 <div className={[styles.overlay]}>
@@ -166,6 +170,8 @@ const SectionPortfolio = () => {
                 show={showModalFalamex}
                 picture={pictureFalamex}
                 alt={altFalamex}
+                isFade={() => isFade}
+                isShow={() => isShow}
             >
                 <h2>Falamex</h2>
                 <p className="lead">

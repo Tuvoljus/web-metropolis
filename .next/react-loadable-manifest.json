@@ -19,6 +19,12 @@
       "static/chunks/components_SectionAbout_js.js"
     ]
   },
+  "..\\components\\MainPage.js -> ./SectionNews": {
+    "id": "./components/SectionNews.js",
+    "files": [
+      "static/chunks/components_SectionNews_js.js"
+    ]
+  },
   "..\\components\\MainPage.js -> ./SectionPortfolio": {
     "id": "./components/SectionPortfolio.js",
     "files": [

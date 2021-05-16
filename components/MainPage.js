@@ -4,8 +4,10 @@ import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import { useAmp } from 'next/amp'
 const SectionAbout = dynamic(() => import('./SectionAbout'))
+const SectionNews = dynamic(() => import('./SectionNews'))
 const SectionService = dynamic(() => import('./SectionService'))
 const SectionPortfolio = dynamic(() => import('./SectionPortfolio'))
+
 
 
 
@@ -40,6 +42,7 @@ const MainPage = () => {
         </header>
         <main>
             <SectionAbout />
+            <SectionNews />
             <SectionService />
             <SectionPortfolio />
          
